@@ -1,13 +1,22 @@
+:root {
+  --mainColor: #ff9800;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
-    Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: stix-two-text, Georgia, 'Times New Roman', Times, serif;
+  line-height: 1.7em;
 }
 
 * {
   box-sizing: border-box;
+}
+
+h1 {
+  font-family: roc-grotesk-wide;
+  font-weight: 700;
 }
 
 main {
@@ -17,6 +26,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  max-width: 500px;
 }
 
 code {
@@ -32,4 +42,21 @@ code {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+a {
+  background: linear-gradient(to bottom, var(--mainColor) 0%, var(--mainColor) 100%);
+	background-position: 0 100%;
+	background-repeat: repeat-x;
+	background-size: 1px 2px;
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23ff9800' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+  background-position: 0 100%;
+  background-size: auto 3px;
+  background-repeat: repeat-x;
+  text-decoration: none;
 }
