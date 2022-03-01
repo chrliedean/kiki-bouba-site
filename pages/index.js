@@ -1,10 +1,16 @@
 import Head from 'next/head'
 import Header from '@components/Header'
 import Footer from '@components/Footer'
+import Elementals from '@components/Elementals'
+import Script from 'next/script'
 
 export default function Home() {
   return (
     <div className="container">
+              <Script id='cursoreffect' src='/cursoreffect.js' strategy='afterInteractive' onLoad={()=> {
+                new ghostCursor()
+              }} />
+
       <Head>
         <title>Kiki & Bouba || Travelling Gallery</title>
         <link rel="icon" href="/favicon.ico" />
@@ -12,13 +18,13 @@ export default function Home() {
 
       <main>
         <Header title="KIKI & BOUBA" />
-        <p className="description">
-          Kiki and Bouba is a travelling gallery and artists' collective.
-        </p>
+        <Elementals />
 
       </main>
 
       <Footer />
+
+
     </div>
   )
 }
