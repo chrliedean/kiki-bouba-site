@@ -13,7 +13,7 @@ export default function Home() {
       <main>
         <Header title="KIKI & BOUBA" />
         <p className="description">
-          Kiki and Bouba is a travelling gallery and artists' collective.
+          Kiki & Bouba is a travelling gallery and artists' collective.
         </p>
 
       </main>
