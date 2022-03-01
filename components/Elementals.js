@@ -1,13 +1,14 @@
 import styles from './Elementals.module.css'
 import React from 'React'
 import Popup from 'reactjs-popup'
+import ElementalsLogo from '@components/ElementalsLogo'
 import 'reactjs-popup/dist/index.css';
 
 
 export default function Elementals() {
     return (
       <>
-        <img className={styles.title} src="/elementals.svg" alt='ELEMENTALS' draggable="false"></img>
+        <ElementalsLogo className={styles.logo} />
         <div className='dualColumns'>
             <div className='dualColumn'>
                 <h2>THE SHOW</h2>

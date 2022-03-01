@@ -1,11 +1,9 @@
-.title {
-    width: 90%;
-    max-width: 600px;
-    margin: 0 auto;
-    display: block;
-}
+
 
 .showDescription {
     text-align: left;
 }
 
+.logo {
+    max-width: 800px;
+}
