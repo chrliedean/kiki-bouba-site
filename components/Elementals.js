@@ -29,7 +29,7 @@ tactically or to speak.</p>
             <div className='dualColumn'>
                 <h2>THE ARTISTS</h2>
                 <ul>
-                    <li><a href="#">Kutay Tufekci</a></li>
+                    <li><a href="#">Feyzi Kutay</a></li>
                     <li><a href="#">Daniel Zeballos</a></li>
                     <li><a href="#">Andrew Basinski</a></li>
                     <li><a href="#">Dabin Ahn</a></li>
