@@ -6,14 +6,14 @@ export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Kiki & Bouba || Travelling Gallery</title>
+        <title>Kiki & Bouba || Traveling Gallery</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
         <Header title="KIKI & BOUBA" />
         <p className="description">
-          Kiki & Bouba is a travelling gallery and artists' collective.
+          Kiki & Bouba is a traveling gallery and artists' collective.
         </p>
 
       </main>
