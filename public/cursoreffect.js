@@ -129,7 +129,3 @@ function ghostCursor(options) {
   
     init()
   }
-
-  function onLoad() {
-      new ghostCursor();
-  }
