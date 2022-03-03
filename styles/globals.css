@@ -1,7 +1,12 @@
 :root {
   --mainColor: #ff9800;
   --mainColorActive: #ffb443;
-  --backgroundColor: rgb(3, 24, 70);
+  --backgroundColor: #FFFFFF;
+}
+
+::selection {
+  background-color: #000;
+  color: #FFF;
 }
 
 html,
@@ -11,9 +16,8 @@ body {
   font-family: garamound-atf-subhead, Georgia, 'Times New Roman', Times, serif;
   /* background-color: rgb(6, 116, 73); */
   background-color: var(--backgroundColor);
-  color: #fafafa;
+  color: #000;
   line-height: 1.7;
-  cursor: url(/cursor.png), pointer !important;
 }
 
 * {
@@ -55,20 +59,31 @@ code {
   width: 100%;
 }
 
+.homecontainer {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.description {
+  margin-top: -10px;
+}
+
 a {
   background: linear-gradient(to bottom, var(--mainColor) 0%, var(--mainColor) 100%);
 	background-position: 0 100%;
 	background-repeat: repeat-x;
 	background-size: 1px 2px;
-  color: #fafafa;
   text-decoration: none;
+  color: #000;
 }
 
 button {
   font-family: roc-grotesk-wide;
   font-weight: 700;
   font-size: 12pt;
-  color: #000;
   background: var(--mainColor);
   border: none;
   border-radius: 6px;
@@ -112,11 +127,7 @@ a:hover, a:focus {
   flex: 0;
 }
 
-ul {
-  list-style-position: inside;
-  padding: 0;
-  list-style-type: none;
-}
+
 
 address {
   font-family: roc-grotesk-wide, sans-serif;

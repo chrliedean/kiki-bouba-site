@@ -6,25 +6,21 @@ import Script from 'next/script'
 
 export default function Home() {
   return (
-    <div className="container">
-              <Script id='cursoreffect' src='/cursoreffect.js' strategy='afterInteractive' onLoad={()=> {
-                new ghostCursor()
-              }} />
-
+<div className="homecontainer">
       <Head>
-        <title>Kiki & Bouba || Travelling Gallery</title>
+        <title>Kiki & Bouba</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
         <Header title="KIKI & BOUBA" />
-        <Elementals />
+        <p className="description">
+          Kiki & Bouba is a traveling gallery and artists' collective.
+        </p>
 
       </main>
 
       <Footer />
-
-
     </div>
   )
 }

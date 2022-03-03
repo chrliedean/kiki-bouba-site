@@ -1,18 +1,32 @@
-import styles from './Elementals.module.css'
-import React from 'React'
-import Popup from 'reactjs-popup'
+import Head from 'next/head'
+import Header from '@components/Header'
+import Footer from '@components/Footer'
+import Elementals from '@components/Elementals'
+import Script from 'next/script'
 import ElementalsLogo from '@components/ElementalsLogo'
-import 'reactjs-popup/dist/index.css';
+import styles from '@styles/Elementals.module.css'
+import Popup from 'reactjs-popup'
 
+export default function Home() {
+  return (
+    <div className="container" className={styles.container}>
+              <Script id='cursoreffect' src='/cursoreffect.js' strategy='afterInteractive' onLoad={()=> {
+                new ghostCursor()
+              }} />
 
-export default function Elementals() {
-    return (
-      <>
-              <style jsx>{`
-            :root {
-                --backgroundColor: #000 !important;
-              }
-`}</style>
+      <Head>
+        <title>Elementals || Kiki & Bouba</title>
+        <link rel="icon" href="/favicon.ico" />
+        <style global jsx>{`
+            ::selection {
+                background-color: rgb(0, 83, 38) !important;
+                color: white !important;
+            }
+        `}</style>
+      </Head>
+
+      <main>
+        <Header title="KIKI & BOUBA" />
         <ElementalsLogo className={styles.logo} />
         <div className={styles.elementalsContent}>
         <div className='dualColumns'>
@@ -49,13 +63,13 @@ tactically or to speak.</p>
                 <h2>INFO</h2>
                 <span className="showInfoText">APRIL 8 2022, 6-9 PM</span>
                 <address>3926 N MONTECELLO AVE <br></br>CHICAGO, IL 60618</address>
-                <Popup trigger={<button className="button">RSVP TO OPENING</button>} modal>
+                <Popup trigger={<button className="button" className={styles.button}>RSVP TO OPENING</button>} modal>
                         <form name='rsvpelements' netlify>
                             <div className='inputContainer'>
                                 <p><label>NAME <input type="name"></input></label></p>
                                 <p><label>PHONE NUMBER <input type="tel"></input></label></p>
                             </div>
-                            <p><button type='submit'>CONFIRM</button></p>
+                            <p><button className={styles.button} type='submit'>CONFIRM</button></p>
                         </form>
                 </Popup>
                 <span className="showInfoText">APRIL 9 - APRIL 28:<br></br> BY APPOINTMENT ONLY </span>
@@ -64,7 +78,11 @@ tactically or to speak.</p>
         </div>
         <h2>PROOF OF VACCINATION AND ID REQUIRED FOR ENTRY.</h2>    
         </div>
-      </>
-    )
-  }
-  
+      </main>
+
+      <Footer />
+
+
+    </div>
+  )
+}
