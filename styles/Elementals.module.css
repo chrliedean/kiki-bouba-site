@@ -1,0 +1,44 @@
+.container {
+    background-color: rgb(0, 83, 38);
+    color: #fafafa;
+    cursor: url(/cursor.png), pointer !important;
+}
+
+.showDescription {
+    text-align: left;
+    margin-top: 0;
+}
+
+.logo {
+    max-width: 800px;
+    margin-bottom: 20px;
+}
+
+.artistList {
+    list-style-position: inside;
+    padding: 0;
+    list-style-type: none;
+    margin-top: 0;
+}
+
+.elementalsContent {
+    color: #FFF;
+}
+
+.vaxNotice {
+    font-family: roc-grotesk-wide;
+    font-weight: 700;
+    text-align: center;
+    display: block;
+    width: fit-content;
+    margin: 50px auto;
+    font-size: 14pt;
+}
+
+.button {
+    color: rgb(0, 83, 38) !important;
+}
+
+.container a {
+    color: #fafafa;
+}

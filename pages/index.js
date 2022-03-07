@@ -1,12 +1,13 @@
 import Head from 'next/head'
 import Header from '@components/Header'
 import Footer from '@components/Footer'
+import Script from 'next/script'
 
 export default function Home() {
   return (
-    <div className="container">
+<div className="homecontainer">
       <Head>
-        <title>Kiki & Bouba || Traveling Gallery</title>
+        <title>Kiki & Bouba</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

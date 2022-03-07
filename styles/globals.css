@@ -1,33 +1,55 @@
 :root {
   --mainColor: #ff9800;
+  --mainColorActive: #ffb443;
+  --backgroundColor: #FFFFFF;
+}
+
+::selection {
+  background-color: #000;
+  color: #FFF;
 }
 
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: stix-two-text, Georgia, 'Times New Roman', Times, serif;
-  line-height: 1.7em;
+  font-family: garamound-atf-subhead, Georgia, 'Times New Roman', Times, serif;
+  /* background-color: rgb(6, 116, 73); */
+  background-color: var(--backgroundColor);
+  color: #000;
+  line-height: 1.7;
 }
 
 * {
   box-sizing: border-box;
 }
 
+.hidden {
+  display: none;
+}
+
 h1 {
-  font-family: roc-grotesk-wide;
+  font-family: roc-grotesk-wide, sans-serif;
   font-weight: 700;
 }
 
+h2 {
+  font-family: roc-grotesk-wide, sans-serif;
+  font-weight: 700;
+  font-size: 14pt;
+}
+
 main {
-  padding: 5rem 10px;
+  padding: 2rem 20px 0 20px;
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 500px;
   text-align: center;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 code {
@@ -38,6 +60,10 @@ code {
 }
 
 .container {
+  width: 100%;
+}
+
+.homecontainer {
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -45,13 +71,38 @@ code {
   align-items: center;
 }
 
+.description {
+  margin-top: -10px;
+}
+
 a {
   background: linear-gradient(to bottom, var(--mainColor) 0%, var(--mainColor) 100%);
 	background-position: 0 100%;
 	background-repeat: repeat-x;
 	background-size: 1px 2px;
-  color: #000;
   text-decoration: none;
+  color: #000;
+}
+
+button {
+  font-family: roc-grotesk-wide;
+  font-weight: 700;
+  font-size: 12pt;
+  background: var(--mainColor);
+  border: none;
+  border-radius: 6px;
+  width:fit-content;
+  margin: 20px auto;
+  padding: 18px 15px 15px 15px;
+  transition: all 200ms;
+}
+
+button:hover {
+  cursor: url(/pointer.png), pointer;
+  background: var(--mainColorActive);
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23ff9800' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+  background-position: 0% 100%;
+  background-size: cover;
 }
 
 a:hover, a:focus {
@@ -60,4 +111,99 @@ a:hover, a:focus {
   background-size: auto 3px;
   background-repeat: repeat-x;
   text-decoration: none;
+  cursor: url(/pointer.png), pointer;
+}
+
+.dualColumns {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.dualColumn {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+}
+
+
+
+
+address {
+  font-family: roc-grotesk-wide, sans-serif;
+  font-style: normal;
+  font-size: 12pt;
+}
+
+.showInfoText {
+  font-family: roc-grotesk-wide, sans-serif;
+  font-size: 12pt;
+}
+
+.popup-content {
+  width: 100% !important;
+  color: #000;
+  max-width: 500px;
+  border: 50px solid transparent;
+  -webkit-border: 50px solid transparent;
+  border-image-source: url(/window.png) !important;
+  -webkit-border-image-source: url(/window.png) !important;
+  border-image-slice: 22 21 7 21 fill !important;
+  border-top: 22px !important;
+  border-right: 21px !important;
+  border-bottom: 7px !important;
+  border-left: 21px !important;
+  border-image-repeat: stretch !important;
+}
+
+.inputContainer {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.popup-content button {
+  margin: 0 auto;
+  display: block;
+}
+
+label {
+  font-family: roc-grotesk-wide, sans-serif;
+}
+
+label {
+  font-weight: 600;
+  display: block;
+  width: fit-content;
+  margin: auto 0 0 auto;
+  cursor: url(/cursor.png), pointer;
+}
+
+.popup-content input {
+  font-size: 12pt;
+
+  border: 1px solid #000;
+  padding: 5px;
+  cursor: url(/textcursor.png), text;
+}
+
+.st0:hover {
+  fill: var(--mainColor) !important;
+  transition: none;
+}
+
+.st0 {
+  transition: 1s ease all;
+}
+
+@media screen and (min-width: 700px) {
+
+  .dualColumns {
+    max-width: 100%;
+  }
+
+  .dualColumn {
+    flex: 1;
+  }
 }
