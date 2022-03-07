@@ -8,11 +8,6 @@ import 'reactjs-popup/dist/index.css';
 export default function Elementals() {
     return (
       <>
-              <style jsx>{`
-            :root {
-                --backgroundColor: #000 !important;
-              }
-`}</style>
         <ElementalsLogo className={styles.logo} />
         <div className={styles.elementalsContent}>
         <div className='dualColumns'>
@@ -36,15 +31,16 @@ tactically or to speak.</p>
             <div className='dualColumn'>
                 <h2>THE ARTISTS</h2>
                 <ul className={styles.artistList}>
-                    <li><a href="#">Feyzi Kutay</a></li>
-                    <li><a href="#">Daniel Zeballos</a></li>
-                    <li><a href="#">Andrew Basinski</a></li>
-                    <li><a href="#">Dabin Ahn</a></li>
                     <li><a href="#">Noelle Africh</a></li>
+                    <li><a href="#">Dabin Ahn</a></li>
+                    <li><a href="#">Andrew Basinski</a></li>
+                    <li><a href='//milo.house' target="_blank"></a>Milo Christie</li>
                     <li><a href="#">Nick D’Alessandro</a></li>
-                    <li><a href="#">CJ Shaw</a></li>
                     <li><a href="#">Yanka Kostova</a></li>
+                    <li><a href="#">Feyzi Kutay</a></li>
                     <li><a href="#">Julia Marks</a></li>
+                    <li><a href="#">CJ Shaw</a></li>
+                    <li><a href="#">Daniel Zeballos</a></li>
                 </ul>
                 <h2>INFO</h2>
                 <span className="showInfoText">APRIL 8 2022, 6-9 PM</span>
