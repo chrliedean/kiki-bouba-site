@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import Header from '@components/Header'
 import Footer from '@components/Footer'
-import Elementals from '@components/Elementals'
 import Script from 'next/script'
 
 export default function Home() {

@@ -24,6 +24,10 @@ body {
   box-sizing: border-box;
 }
 
+.hidden {
+  display: none;
+}
+
 h1 {
   font-family: roc-grotesk-wide, sans-serif;
   font-weight: 700;
@@ -115,6 +119,7 @@ a:hover, a:focus {
   flex-direction: row;
   flex-wrap: wrap;
   max-width: 400px;
+  margin: 0 auto;
 }
 
 .dualColumn {
@@ -123,9 +128,6 @@ a:hover, a:focus {
   flex-basis: 100%;
 }
 
-.dualColumnLower {
-  flex: 0;
-}
 
 
 

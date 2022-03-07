@@ -7,6 +7,15 @@
   align-items: center;
 }
 
+.footerText {
+  display: block;
+}
+
+.copyright {
+  display: block;
+  margin: 10px;
+}
+
 .logo {
   height: 1em;
   margin: 5px;

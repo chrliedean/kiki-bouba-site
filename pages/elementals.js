@@ -1,9 +1,9 @@
 import Head from 'next/head'
 import Header from '@components/Header'
 import Footer from '@components/Footer'
-import Elementals from '@components/Elementals'
 import Script from 'next/script'
 import ElementalsLogo from '@components/ElementalsLogo'
+import ElementalsRSVP from '@components/ElementalsRSVP'
 import styles from '@styles/Elementals.module.css'
 import Popup from 'reactjs-popup'
 
@@ -17,7 +17,7 @@ export default function Home() {
       <Head>
         <title>Elementals || Kiki & Bouba</title>
         <link rel="icon" href="/favicon.ico" />
-        <style global jsx>{`
+        <style jsx gloabal>{`
             ::selection {
                 background-color: rgb(0, 83, 38) !important;
                 color: white !important;
@@ -50,33 +50,28 @@ tactically or to speak.</p>
             <div className='dualColumn'>
                 <h2>THE ARTISTS</h2>
                 <ul className={styles.artistList}>
-                    <li><a href="#">Feyzi Kutay</a></li>
-                    <li><a href="#">Daniel Zeballos</a></li>
-                    <li><a href="#">Andrew Basinski</a></li>
+                <li><a href="#">Noelle Africh</a></li>
                     <li><a href="#">Dabin Ahn</a></li>
-                    <li><a href="#">Noelle Africh</a></li>
+                    <li><a href="#">Andrew Basinski</a></li>
+                    <li><a href='//milo.house' target="_blank">Milo Christie</a></li>
                     <li><a href="#">Nick D’Alessandro</a></li>
-                    <li><a href="#">CJ Shaw</a></li>
                     <li><a href="#">Yanka Kostova</a></li>
+                    <li><a href="//instagram.com/kutaytufekcistudio" target='blank'>Feyzi Kutay</a></li>
                     <li><a href="#">Julia Marks</a></li>
+                    <li><a href="#">CJ Shad</a></li>
+                    <li><a href="#">Daniel Zeballos</a></li>
                 </ul>
                 <h2>INFO</h2>
                 <span className="showInfoText">APRIL 8 2022, 6-9 PM</span>
                 <address>3926 N MONTECELLO AVE <br></br>CHICAGO, IL 60618</address>
                 <Popup trigger={<button className="button" className={styles.button}>RSVP TO OPENING</button>} modal>
-                        <form name='rsvpelements' netlify>
-                            <div className='inputContainer'>
-                                <p><label>NAME <input type="name"></input></label></p>
-                                <p><label>PHONE NUMBER <input type="tel"></input></label></p>
-                            </div>
-                            <p><button className={styles.button} type='submit'>CONFIRM</button></p>
-                        </form>
+                    <ElementalsRSVP />
                 </Popup>
                 <span className="showInfoText">APRIL 9 - APRIL 28:<br></br> BY APPOINTMENT ONLY </span>
 
             </div>
         </div>
-        <h2>PROOF OF VACCINATION AND ID REQUIRED FOR ENTRY.</h2>    
+        <span className={styles.vaxNotice}>PROOF OF VACCINATION AND ID REQUIRED FOR ENTRY.</span>  
         </div>
       </main>
 
