@@ -5,6 +5,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+
+.footer p {
+  margin: 5px;
 }
 
 .footerText {
@@ -14,6 +19,7 @@
 .copyright {
   display: block;
   margin: 10px;
+  opacity: 0.5;
 }
 
 .logo {

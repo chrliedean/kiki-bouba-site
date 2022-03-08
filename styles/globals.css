@@ -128,7 +128,13 @@ a:hover, a:focus {
   flex-basis: 100%;
 }
 
-
+.infobox {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  width: fit-content;
+  padding: 0 20px 20px 20px;
+  margin: 0 auto;
+}
 
 
 address {
@@ -140,6 +146,7 @@ address {
 .showInfoText {
   font-family: roc-grotesk-wide, sans-serif;
   font-size: 12pt;
+  display: block;
 }
 
 .popup-content {

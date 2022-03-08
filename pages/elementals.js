@@ -14,6 +14,8 @@ export default function Home() {
                 new ghostCursor()
               }} />
 
+              <Script id='background' src='/elementalsBG.js' strategy='afterInteractive' />
+
       <Head>
         <title>Elementals || Kiki & Bouba</title>
         <link rel="icon" href="/favicon.ico" />
@@ -61,6 +63,8 @@ tactically or to speak.</p>
                     <li><a href="#">CJ Shad</a></li>
                     <li><a href="#">Daniel Zeballos</a></li>
                 </ul>
+                <div className="infobox">
+
                 <h2>INFO</h2>
                 <span className="showInfoText">APRIL 8 2022, 6-9 PM</span>
                 <address>3926 N MONTECELLO AVE <br></br>CHICAGO, IL 60618</address>
@@ -68,6 +72,7 @@ tactically or to speak.</p>
                     <ElementalsRSVP />
                 </Popup>
                 <span className="showInfoText">APRIL 9 - APRIL 28:<br></br> BY APPOINTMENT ONLY </span>
+                </div>
 
             </div>
         </div>
