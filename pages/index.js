@@ -68,7 +68,7 @@ tactically or to speak.</p>
 
                 <h2>INFO</h2>
                 <span className="showInfoText">APRIL 8 2022, 6-9 PM</span>
-                <address>3926 N MONTECELLO AVE <br></br>APT. 2F<br></br>CHICAGO, IL 60618</address>
+                <address>3256 N MONTECELLO AVE <br></br>APT. 2F<br></br>CHICAGO, IL 60618</address>
                 <a className="button" className={styles.button} href="sms://+17733021911&body=I'm RSVPing to Elementals! My name is ">RSVP TO OPENING</a>
                 
                                 <span className="showInfoText">APRIL 9 - APRIL 28:<br></br> BY APPOINTMENT ONLY </span>
