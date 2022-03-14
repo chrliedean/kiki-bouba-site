@@ -38,7 +38,26 @@
 
 .button {
     color: rgb(0, 83, 38) !important;
+    display: block;
+    font-family: roc-grotesk-wide;
+    font-weight: 700;
+    font-size: 12pt;
+    background: var(--mainColor);
+    border: none;
+    border-radius: 6px;
+    width:fit-content;
+    margin: 20px auto;
+    padding: 18px 15px 15px 15px;
+    transition: all 200ms;
 }
+
+.button:hover {
+    cursor: url(/pointer.png), pointer;
+    background: var(--mainColorActive);
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23ff9800' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+    background-position: 0% 100%;
+    background-size: cover;
+  }
 
 .container a {
     color: #fafafa;

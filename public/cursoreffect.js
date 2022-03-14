@@ -33,6 +33,7 @@ function ghostCursor(options) {
   
       bindEvents()
       loop()
+      canvas.id = "canvas";
     }
   
     // Bind events that are needed
